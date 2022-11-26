@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title__image {
+    width: 50%;
+    text-align: center;
+}
+
+.first-screeen {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.first-screen__next {
+    display: flex;
+    justify-content: center;
+}
+
+path {
+    fill: white;
+    stroke: black;
+    stroke-width: 5px;
+    stroke-dasharray: 1080;
+    stroke-dashoffset: 1080;
+    animation: draw 1s ease forwards;
+    transition: all 0.1s linear;
+
+}
+
+.title__button {
+    font-family: "Marko One";
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: 3px solid black;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease;
+}
+
+.title__button:hover {
+    background-color: black;
+    color: white;
+}
+
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title__button {
+        font-size: 24px;
+        padding: 5px 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title__image {
+        width: 100vw;
+    }
+
+    .title__button {
+        font-size: 18px;
+    }
+}
+
+@media(max-aspect-ratio: 9/10) {
+    .first-screeen {
+        background-size: 100% auto;
+    }
+}

@@ -1,5 +1,7 @@
 header {
     background-color: white;
+    position: fixed;
+    width: 100vw;
 }
 
 .header__burger {
@@ -12,18 +14,16 @@ header {
     width: 25px;
 }
 
-.header__link {
-    text-decoration: none;
-}
-
 .header__body {
     display: flex;
     justify-content: center;
 }
 
 .header__link {
+    text-decoration: none;
     font-size: 20px;
     font-family: Roboto;
+    font-weight: 700;
     color: black;
     margin: 0 40px;
     padding: 5px 10px;
