@@ -42,7 +42,7 @@ path {
     stroke-width: 5px;
     stroke-dasharray: 1080;
     stroke-dashoffset: 1080;
-    animation: draw 1s ease forwards;
+    animation: draw 30s ease forwards;
     transition: all 0.1s linear;
 
 }
@@ -78,12 +78,23 @@ path {
 }
 
 @media (max-width: 600px) {
+    .first-screen__title {
+        display: flex;
+        flex: 1 1 auto;
+    }
+
     .title__image {
         width: 100vw;
     }
 
     .title__button {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+    .first-screen__title {
+        padding-top: 30px;
     }
 }
 
