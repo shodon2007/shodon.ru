@@ -132,20 +132,22 @@ header {
 }
 
 .title__image {
-  width: 50%;
+  width: 80%;
   text-align: center;
 }
 
 .first-screeen {
-  background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  background-size: auto 100%;
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.first-screen__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-screen__next {
@@ -209,21 +211,14 @@ path {
     padding: 5px 20px;
   }
 }
-@media (max-width: 600px) {
-  .first-screen__title {
-    display: flex;
-    flex: 1 1 auto;
-  }
+@media (max-width: 1000px) {
   .title__image {
-    width: 100vw;
-  }
-  .title__button {
-    font-size: 18px;
+    width: 100%;
   }
 }
-@media (max-width: 540px) {
-  .first-screen__title {
-    padding-top: 30px;
+@media (max-width: 600px) {
+  .title__button {
+    font-size: 18px;
   }
 }
 @media (max-aspect-ratio: 9/10) {
