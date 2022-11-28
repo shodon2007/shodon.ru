@@ -11,6 +11,10 @@ header {
     cursor: pointer;
 }
 
+.header__burger:active {
+    background: none;
+}
+
 .header__burger img {
     width: 25px;
 }
