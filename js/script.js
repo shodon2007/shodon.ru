@@ -1,7 +1,8 @@
 let isBurger = false;
 const burger = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.burger__body');
-let burgerClick = () => {
+
+const burgerClick = () => {
     isBurger = isBurger == false ? true : false;
 
     if (isBurger == true) {
