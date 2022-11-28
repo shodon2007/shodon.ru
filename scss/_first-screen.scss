@@ -22,23 +22,7 @@
     justify-content: center;
 }
 
-.first-screen__next {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.first-screen__next img {
-    width: 50px;
-    overflow: hidden;
-    transition: all 0.2s ease;
-}
-
-.first-screen__next img:hover {
-    transform: scale(1.4);
-}
-
-path {
+path.title {
     fill: white;
     stroke: black;
     stroke-width: 5px;
