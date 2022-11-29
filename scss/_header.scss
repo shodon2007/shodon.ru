@@ -1,8 +1,14 @@
 header {
-    padding: 10px;
-    background-color: white;
     position: fixed;
+    padding: 10px;
     width: 100vw;
+    background-color: white;
+}
+
+.header__body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header__topic {
@@ -19,16 +25,6 @@ header {
     cursor: pointer;
 }
 
-.header__burger:active {
-    background: none;
-}
-
 .header__burger img {
     width: 30px;
-}
-
-.header__body {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
 }
