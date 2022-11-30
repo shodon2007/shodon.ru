@@ -2,8 +2,21 @@ header {
     position: fixed;
     padding: 10px;
     width: 100vw;
-    background-color: white;
+    transition: all 0.3s ease;
 }
+
+body.white {
+    header {
+        background-color: white;
+    }
+}
+
+body.black {
+    header {
+        background-color: black;
+    }
+}
+
 
 .header__body {
     display: flex;
@@ -12,17 +25,37 @@ header {
 }
 
 .header__topic {
+    transition: all 0.3s ease;
     width: 30px;
     height: 30px;
-    border: 3px solid black;
     border-radius: 50%;
-    background-color: white;
+}
+
+body.white {
+    .header__topic {
+        border: 3px solid black;
+        background-color: white;
+    }
+}
+
+body.black {
+    .header__topic {
+        border: 3px solid white;
+        background-color: black;
+    }
 }
 
 .header__burger {
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+body.black {
+    .header__burger {
+        filter: invert(100%);
+    }
 }
 
 .header__burger img {

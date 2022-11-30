@@ -1,14 +1,22 @@
-.title__image {
-    width: 80%;
-    text-align: center;
-}
-
 .first-screeen {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+body.white {
+    .first-screeen {
+        background-color: white;
+    }
+}
+
+body.black {
+    .first-screeen {
+        background-color: black;
+    }
 }
 
 .first-screen__title {
@@ -18,19 +26,51 @@
 }
 
 path.title {
-    fill: white;
-    stroke: black;
     stroke-width: 5px;
     stroke-dasharray: 1080;
     stroke-dashoffset: 1080;
     animation: draw 10s ease forwards;
-    transition: all 5s linear;
+    transition: all 0.3s ease;
+}
+
+body.white {
+    path.title {
+        fill: white;
+        stroke: black;
+    }
+}
+
+body.black {
+    path.title {
+        fill: black;
+        stroke: white;
+    }
+}
+
+.title__image {
+    width: 80%;
+    text-align: center;
 }
 
 .title__text {
     animation: titleText 5s ease forwards;
     font-family: "Marko One";
     font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+body.white {
+    .title__text {
+        background-color: white;
+        color: black;
+    }
+}
+
+body.black {
+    .title__text {
+        background-color: black;
+        color: white;
+    }
 }
 
 @keyframes titleText {

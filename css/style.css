@@ -12,7 +12,15 @@ header {
   position: fixed;
   padding: 10px;
   width: 100vw;
+  transition: all 0.3s ease;
+}
+
+body.white header {
   background-color: white;
+}
+
+body.black header {
+  background-color: black;
 }
 
 .header__body {
@@ -22,17 +30,31 @@ header {
 }
 
 .header__topic {
+  transition: all 0.3s ease;
   width: 30px;
   height: 30px;
-  border: 3px solid black;
   border-radius: 50%;
+}
+
+body.white .header__topic {
+  border: 3px solid black;
   background-color: white;
+}
+
+body.black .header__topic {
+  border: 3px solid white;
+  background-color: black;
 }
 
 .header__burger {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+body.black .header__burger {
+  filter: invert(100%);
 }
 
 .header__burger img {
@@ -59,8 +81,16 @@ header {
   transition: all 0.4s ease;
   width: 300px;
   height: 100vh;
-  background-color: rgb(255, 255, 255);
+}
+
+body.white .burger__body {
+  background-color: white;
   border: 3px solid black;
+}
+
+body.black .burger__body {
+  background-color: black;
+  border: 3px solid white;
 }
 
 .burger__top {
@@ -81,16 +111,39 @@ header {
   font-family: Roboto;
   font-size: 20px;
   text-decoration: none;
-  color: rgb(0, 0, 0);
-  border: 3px solid white;
 }
-.burger__link:hover {
+
+body.white .burger__link {
+  border: 3px solid white;
+  background-color: white;
+  color: black;
+}
+body.white .burger__link:hover {
   border: 3px solid black;
+}
+
+body.black .burger__link {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+}
+body.black .burger__link:hover {
+  border: 3px solid white;
 }
 
 .burger__exit {
   cursor: pointer;
   width: 30px;
+}
+
+body.white .exit__item {
+  fill: white;
+  stroke: black;
+}
+
+body.black .exit__item {
+  fill: black;
+  stroke: white;
 }
 
 @media (max-width: 320px) {
@@ -101,17 +154,21 @@ header {
     font-size: 16px;
   }
 }
-.title__image {
-  width: 80%;
-  text-align: center;
-}
-
 .first-screeen {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+body.white .first-screeen {
+  background-color: white;
+}
+
+body.black .first-screeen {
+  background-color: black;
 }
 
 .first-screen__title {
@@ -121,14 +178,27 @@ header {
 }
 
 path.title {
-  fill: white;
-  stroke: black;
   stroke-width: 5px;
   stroke-dasharray: 1080;
   stroke-dashoffset: 1080;
   -webkit-animation: draw 10s ease forwards;
           animation: draw 10s ease forwards;
-  transition: all 5s linear;
+  transition: all 0.3s ease;
+}
+
+body.white path.title {
+  fill: white;
+  stroke: black;
+}
+
+body.black path.title {
+  fill: black;
+  stroke: white;
+}
+
+.title__image {
+  width: 80%;
+  text-align: center;
 }
 
 .title__text {
@@ -136,6 +206,17 @@ path.title {
           animation: titleText 5s ease forwards;
   font-family: "Marko One";
   font-size: 30px;
+  transition: all 0.3s ease;
+}
+
+body.white .title__text {
+  background-color: white;
+  color: black;
+}
+
+body.black .title__text {
+  background-color: black;
+  color: white;
 }
 
 @-webkit-keyframes titleText {

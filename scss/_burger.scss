@@ -18,8 +18,20 @@
     transition: all 0.4s ease;
     width: 300px;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid black;
+}
+
+body.white {
+    .burger__body {
+        background-color: white;
+        border: 3px solid black;
+    }
+}
+
+body.black {
+    .burger__body {
+        background-color: black;
+        border: 3px solid white;
+    }
 }
 
 .burger__top {
@@ -40,17 +52,50 @@
     font-family: Roboto;
     font-size: 20px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: 3px solid white;
+}
 
-    &:hover {
-        border: 3px solid black;
+body.white {
+    .burger__link {
+        border: 3px solid white;
+        background-color: white;
+        color: black;
+
+        &:hover {
+            border: 3px solid black;
+        }
     }
 }
+
+body.black {
+    .burger__link {
+        border: 3px solid black;
+        background-color: black;
+        color: white;
+
+        &:hover {
+            border: 3px solid white;
+        }
+    }
+}
+
 
 .burger__exit {
     cursor: pointer;
     width: 30px;
+}
+
+body.white {
+    .exit__item {
+        fill: white;
+        stroke: black;
+    }
+}
+
+body.black {
+    .exit__item {
+        fill: black;
+        stroke: white;
+    }
 }
 
 @media (max-width: 320px) {
