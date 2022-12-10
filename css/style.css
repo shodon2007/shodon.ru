@@ -264,6 +264,22 @@ body.black .title__text {
   margin-top: 300px;
 }
 
+body.black {
+  background-color: black;
+}
+
+body.white {
+  background-color: white;
+}
+
+body.black .portfolio {
+  background-color: black;
+}
+body.black .portfolio__title {
+  background-color: black;
+  color: white;
+}
+
 .portfolio__title {
   text-align: center;
   font-family: "Marko One";
@@ -273,13 +289,28 @@ body.black .title__text {
 .portfolio__sort {
   margin-top: 20px;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .portfolio__el {
   font-family: "Open Sans";
   border-radius: 30px;
-  padding: 5px 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+body.black .portfolio__el.selected {
+  background-color: white;
   color: black;
+}
+body.black .portfolio__el {
+  color: white;
+}
+
+body.white .portfolio__el.selected {
   background-color: black;
+  color: white;
+}
+body.white .portfolio__el {
+  color: black;
 }

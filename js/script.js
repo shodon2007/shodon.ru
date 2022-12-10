@@ -27,3 +27,19 @@ const topic = () => {
     body.classList.toggle("white");
     console.log(body)
 }
+
+
+const landings = {
+    portfolio: ["Portfolio-layout", "portfolio", "portfolio.shodon.ru", "github.com/shodon2007/portfolio-layout"],
+    tennis: ["Tennis-layout", "tennis", "tennis.shodon.ru", "github.com/shodon2007/portfolio-layout"],
+}
+
+for (item of Object.values(landings)) {
+    document.querySelector(".portfolio__bottom").innerHTML += `
+    <div class="portfolio__project" style="background: url(img/${item[1]})">
+        <div class="project__body">
+            <div class="project"></div>
+        </div>
+    </div>
+    `
+}
