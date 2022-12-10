@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*::-webkit-scrollbar {
+  display: none;
+}
+
 * {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
@@ -182,8 +189,7 @@ path.title {
   stroke-width: 5px;
   stroke-dasharray: 1080;
   stroke-dashoffset: 1080;
-  -webkit-animation: draw 10s ease forwards;
-          animation: draw 10s ease forwards;
+  animation: draw 10s ease forwards;
   transition: all 0.3s ease;
 }
 
@@ -203,8 +209,7 @@ body.black path.title {
 }
 
 .title__text {
-  -webkit-animation: titleText 5s ease forwards;
-          animation: titleText 5s ease forwards;
+  animation: titleText 5s ease forwards;
   font-family: "Marko One";
   font-size: 30px;
   transition: all 0.3s ease;
@@ -220,26 +225,12 @@ body.black .title__text {
   color: white;
 }
 
-@-webkit-keyframes titleText {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes titleText {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@-webkit-keyframes draw {
-  100% {
-    stroke-dashoffset: 0;
   }
 }
 @keyframes draw {
@@ -252,8 +243,43 @@ body.black .title__text {
     width: 100%;
   }
 }
+@media (max-width: 320px) {
+  .title__text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 130px) {
+  .title__text {
+    font-size: 10px;
+  }
+}
 @media (max-aspect-ratio: 9/10) {
   .first-screeen {
     background-size: 100% auto;
   }
+}
+.portfolio {
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.portfolio__title {
+  text-align: center;
+  font-family: "Marko One";
+  font-size: 30px;
+}
+
+.portfolio__sort {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.portfolio__el {
+  font-family: "Open Sans";
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: black;
+  background-color: black;
 }

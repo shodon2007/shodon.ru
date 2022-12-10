@@ -1,0 +1,27 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+
+.portfolio__title {
+    text-align: center;
+    font-family: "Marko One";
+    font-size: 30px;
+}
+
+.portfolio__sort {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.portfolio__el {
+    font-family: 'Open Sans';
+    border-radius: 30px;
+    padding: 5px 10px;
+    color: black;
+    background-color: black;
+}

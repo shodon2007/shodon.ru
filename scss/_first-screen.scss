@@ -95,6 +95,18 @@ body.black {
     }
 }
 
+@media (max-width: 320px) {
+    .title__text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 130px) {
+    .title__text {
+        font-size: 10px;
+    }
+}
+
 @media(max-aspect-ratio: 9/10) {
     .first-screeen {
         background-size: 100% auto;
