@@ -1,3 +1,4 @@
+const thisItem = 'featured';
 const landing = {
     portfolio: {
         name: "Portfolio",
@@ -31,6 +32,10 @@ const frontend = {
 showElements(featured);
 
 function portfolioClick(type) {
+    resetNavStyles();
+    document.querySelector(`.portfolio__${type}`).classList.add('selected')
+
+
     if (type == 'landing') {
         type = landing;
     } else if (type == 'frontend') {
@@ -64,6 +69,12 @@ function showElements(type) {
     </div>
     `
     }
+}
+
+function resetNavStyles() {
+    document.querySelectorAll('.portfolio__el').forEach((el) => {
+        el.classList.remove('selected');
+    })
 }
 
 

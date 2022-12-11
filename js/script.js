@@ -27,5 +27,3 @@ const topic = () => {
     body.classList.toggle("white");
     console.log(body)
 }
-
-

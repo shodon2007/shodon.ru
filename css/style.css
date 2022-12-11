@@ -292,6 +292,7 @@ body.black .title__text {
 }
 
 .portfolio__bottom {
+  transition: all 0.5s ease;
   margin-top: 50px;
   width: 1200px;
   display: grid;
@@ -300,6 +301,7 @@ body.black .title__text {
 }
 
 .portfolio__project {
+  animation: showProjects 0.5s;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -307,6 +309,14 @@ body.black .title__text {
   height: 300px;
 }
 
+@keyframes showProjects {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .project__body {
   opacity: 0;
   transition: all 0.5s ease;
@@ -422,6 +432,9 @@ body.white .portfolio__title {
 .portfolio__sort {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -452,6 +465,12 @@ body.white .portfolio__el {
   color: black;
 }
 
+@media (max-width: 1200px) {
+  .portfolio__bottom {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
 body.black {
   transition: all 0.3s ease;
   background-color: black;

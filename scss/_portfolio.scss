@@ -7,6 +7,7 @@
 }
 
 .portfolio__bottom {
+    transition: all 0.5s ease;
     margin-top: 50px;
     width: 1200px;
     display: grid;
@@ -15,11 +16,22 @@
 }
 
 .portfolio__project {
+    animation: showProjects 0.5s;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 30px;
     height: 300px;
+}
+
+@keyframes showProjects {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .project__body {
@@ -162,6 +174,9 @@ body.white {
 .portfolio__sort {
     margin-top: 20px;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -197,5 +212,13 @@ body.white {
     .portfolio__el {
         transition: all 0.3s ease;
         color: black;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .portfolio__bottom {
+        width: 100%;
+        padding: 0 10px;
     }
 }
