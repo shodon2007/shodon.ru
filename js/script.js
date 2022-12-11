@@ -30,15 +30,38 @@ const topic = () => {
 
 
 const landings = {
-    portfolio: ["Portfolio-layout", "portfolio", "portfolio.shodon.ru", "github.com/shodon2007/portfolio-layout"],
-    tennis: ["Tennis-layout", "tennis", "tennis.shodon.ru", "github.com/shodon2007/portfolio-layout"],
+    portfolio: {
+        name: "Portfolio",
+        imgURL: "portfolio",
+        type: 'landing',
+        url: "portfolio.shodon.ru",
+        github: "github.com/shodon2007/portfolio-layout",
+    },
+    tennis: {
+        name: "Tennis",
+        imgURL: "tennis",
+        type: 'landing',
+        url: "tennis.shodon.ru",
+        github: "github.com/shodon2007/tennis",
+        technologies: "HTML, CSS, SCSS, JS, SWIPER",
+    }
+    // portfolio: ["Portfolio-layout", "portfolio", "portfolio.shodon.ru", "github.com/shodon2007/portfolio-layout"],
+    // tennis: ["Tennis-layout", "tennis", "tennis.shodon.ru", "github.com/shodon2007/portfolio-layout"],
 }
 
 for (item of Object.values(landings)) {
     document.querySelector(".portfolio__bottom").innerHTML += `
-    <div class="portfolio__project" style="background: url(img/${item[1]})">
+    <div class="portfolio__project" style="background-image: url(img/${item.imgURL}.png)">
         <div class="project__body">
-            <div class="project"></div>
+            <div class="project__top">
+                <div class="project__title">${item.name}</div>
+                <div class="project__subtitle">${item.type}</div>
+            </div>
+
+            <div class="project__links">
+                <a class="project__online" href="https://${item.url}">visit online</a>
+                <a class="project__github" href="https://${item.github}">visit github</a>
+            </div>
         </div>
     </div>
     `

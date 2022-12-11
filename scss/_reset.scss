@@ -11,3 +11,23 @@
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
+*::selection {
+    color: black;
+    background-color: white;
+}
+
+body.white {
+    *::selection {
+        color: white;
+        background-color: black;
+    }
+}
+
+body.black {
+    *::selection {
+        color: black;
+        background-color: white
+        ;
+    }
+}
