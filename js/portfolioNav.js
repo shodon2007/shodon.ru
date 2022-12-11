@@ -13,10 +13,7 @@ const landing = {
         type: 'landing',
         url: "tennis.shodon.ru",
         github: "github.com/shodon2007/tennis",
-        technologies: "HTML, CSS, SCSS, JS, SWIPER",
     }
-    // portfolio: ["Portfolio-layout", "portfolio", "portfolio.shodon.ru", "github.com/shodon2007/portfolio-layout"],
-    // tennis: ["Tennis-layout", "tennis", "tennis.shodon.ru", "github.com/shodon2007/portfolio-layout"],
 }
 
 const frontend = {
@@ -28,12 +25,13 @@ const frontend = {
         github: 'github.com/shodon2007'
     }
 }
-
 showElements(featured);
+
+
 
 function portfolioClick(type) {
     resetNavStyles();
-    document.querySelector(`.portfolio__${type}`).classList.add('selected')
+    addNavStyle(type);
 
 
     if (type == 'landing') {
@@ -41,11 +39,11 @@ function portfolioClick(type) {
     } else if (type == 'frontend') {
         type = frontend
     } else if (type == 'featured') {
-        type = featured
+        type = featured;
     } else if (type == 'fullstack') {
-        type = fullstack
+        type = fullstack;
     } else if (type == 'backend') {
-        type = backend
+        type = backend;
     }
     showElements(type);
 }
@@ -69,6 +67,10 @@ function showElements(type) {
     </div>
     `
     }
+}
+
+function addNavStyle(type) {
+    document.querySelector(`.portfolio__${type}`).classList.add('selected');
 }
 
 function resetNavStyles() {

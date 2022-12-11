@@ -301,7 +301,7 @@ body.black .title__text {
 }
 
 .portfolio__project {
-  animation: showProjects 0.5s;
+  animation: showProjects 0.5s ease;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
