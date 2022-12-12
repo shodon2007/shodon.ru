@@ -445,6 +445,9 @@ body.white .portfolio__title {
   cursor: pointer;
 }
 
+body.black .portfolio__el:hover {
+  border: 3px solid white;
+}
 body.black .portfolio__el.selected {
   transition: all 0.3s ease;
   background-color: white;
@@ -453,8 +456,12 @@ body.black .portfolio__el.selected {
 body.black .portfolio__el {
   transition: all 0.3s ease;
   color: white;
+  border: 3px solid black;
 }
 
+body.white .portfolio__el:hover {
+  border: 3px solid black;
+}
 body.white .portfolio__el.selected {
   transition: all 0.3s ease;
   background-color: black;
@@ -463,6 +470,7 @@ body.white .portfolio__el.selected {
 body.white .portfolio__el {
   transition: all 0.3s ease;
   color: black;
+  border: 3px solid white;
 }
 
 @media (max-width: 1200px) {
