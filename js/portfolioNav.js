@@ -1,33 +1,20 @@
 const thisItem = 'featured';
-const landing = {
-    portfolio: {
-        name: "Portfolio",
-        imgURL: "portfolio",
-        type: 'landing',
-        url: "portfolio.shodon.ru",
-        github: "github.com/shodon2007/portfolio-layout",
-    },
-    tennis: {
-        name: "Tennis",
-        imgURL: "tennis",
-        type: 'landing',
-        url: "tennis.shodon.ru",
-        github: "github.com/shodon2007/tennis",
+
+const landing = {}
+
+function addNew(type, name, sort) {
+    type[name] = {
+        name: `${name[0].toUpperCase() + name.slice(1)}`,
+        imgURL: name,
+        type: sort,
+        url: `${name}.shodon.ru`,
+        github: 'github.com/shodon2007/' + name,
     }
 }
 
-const frontend = {
-    test: {
-        name: 'testName',
-        imgURL: "burger-exit",
-        type: 'test',
-        url: 'google.com',
-        github: 'github.com/shodon2007'
-    }
-}
-showElements(featured);
-
-
+addNew(landing, "notation", 'landing');
+addNew(landing, "tennis", 'landing');
+addNew(landing, "portfolio", 'landing')
 
 function portfolioClick(type) {
     resetNavStyles();
@@ -47,6 +34,8 @@ function portfolioClick(type) {
     }
     showElements(type);
 }
+
+
 
 function showElements(type) {
     resetElements();
@@ -69,6 +58,8 @@ function showElements(type) {
     }
 }
 
+showElements(featured);
+
 function addNavStyle(type) {
     document.querySelector(`.portfolio__${type}`).classList.add('selected');
 }
@@ -78,7 +69,6 @@ function resetNavStyles() {
         el.classList.remove('selected');
     })
 }
-
 
 function resetElements() {
     document.querySelector('.portfolio__bottom').innerHTML = '';
