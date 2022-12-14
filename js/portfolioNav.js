@@ -4,7 +4,7 @@ const landing = {};
 const featured = {};
 const frontend = {};
 const fullstack = {};
-const backend = {};
+const javascript = {};
 
 
 function addNew(type, name, sort) {
@@ -17,9 +17,13 @@ function addNew(type, name, sort) {
     }
 }
 
-addNew(landing, "notation", 'landing');
+addNew(javascript, "notation", 'landing');
 addNew(landing, "tennis", 'landing');
-addNew(landing, "portfolio", 'landing')
+addNew(landing, "portfolio", 'landing');
+addNew(landing, "clothes_store", 'landing');
+addNew(javascript, "keyboard-stamina", 'landing');
+addNew(landing, "regna", 'landing');
+addNew(landing, "stamina", 'landing');
 
 function portfolioClick(type) {
     resetNavStyles();
@@ -34,8 +38,8 @@ function portfolioClick(type) {
         type = featured;
     } else if (type == 'fullstack') {
         type = fullstack;
-    } else if (type == 'backend') {
-        type = backend;
+    } else if (type == 'javascript') {
+        type = javascript;
     }
     showElements(type);
 }
