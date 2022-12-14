@@ -1,6 +1,11 @@
 const thisItem = 'featured';
 
-const landing = {}
+const landing = {};
+const featured = {};
+const frontend = {};
+const fullstack = {};
+const backend = {};
+
 
 function addNew(type, name, sort) {
     type[name] = {
