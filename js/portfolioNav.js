@@ -25,6 +25,8 @@ addNew(javascript, "keyboard-stamina", 'javascript');
 addNew(landing, "regna", 'landing');
 addNew(landing, "stamina", 'landing');
 addNew(javascript, "calculator", 'javascript');
+addNew(javascript, "movie", 'javascript');
+addNew(landing, "movie", 'landing');
 
 function portfolioClick(type) {
     resetNavStyles();
