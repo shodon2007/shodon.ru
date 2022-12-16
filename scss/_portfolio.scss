@@ -232,3 +232,15 @@ body.white {
         padding: 0 10px;
     }
 }
+
+@media (max-width: 900px) {
+    .portfolio__bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 220px) {
+    .portfolio__bottom {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
