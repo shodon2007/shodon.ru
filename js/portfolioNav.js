@@ -61,8 +61,8 @@ function showElements(type) {
             </div>
 
             <div class="project__links">
-                <a class="project__online" href="https://${item.url}">visit online</a>
-                <a class="project__github" href="https://${item.github}">visit github</a>
+                <a class="project__online" target="_blank" href="https://${item.url}">visit online</a>
+                <a class="project__github" target="_blank" href="https://${item.github}">visit github</a>
             </div>
         </div>
     </div>

@@ -477,12 +477,43 @@ body.white .portfolio__el {
     padding: 0 10px;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .portfolio__bottom {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 220px) {
+@media (max-width: 500px) {
+  .project__title {
+    font-size: 24px;
+  }
+  .portfolio__project {
+    height: 250px;
+  }
+  .project__body {
+    height: 250px;
+  }
+}
+@media (max-width: 360px) {
+  .project__title {
+    font-size: 20px;
+  }
+  .project__subtitle {
+    font-size: 14px;
+  }
+  .portfolio__sort {
+    gap: 10px;
+  }
+  .portfolio__project {
+    height: 200px;
+  }
+  .project__body {
+    height: 200px;
+  }
+  .portfolio__bottom {
+    gap: 10px;
+  }
+}
+@media (max-width: 300px) {
   .portfolio__bottom {
     grid-template-columns: repeat(1, 1fr);
   }
