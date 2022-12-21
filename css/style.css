@@ -172,6 +172,9 @@ body.white .exit__item {
   stroke: black;
 }
 
+body.black .burger__exit {
+  filter: invert(100%);
+}
 body.black .exit__item {
   fill: black;
   stroke: white;

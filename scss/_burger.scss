@@ -104,6 +104,10 @@ body.white {
 }
 
 body.black {
+    .burger__exit {
+        filter: invert(100%);
+    }
+
     .exit__item {
         fill: black;
         stroke: white;
