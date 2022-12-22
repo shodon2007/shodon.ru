@@ -26,10 +26,10 @@ body.black {
 }
 
 path.title {
+    opacity: 0;
     stroke-width: 5px;
     stroke-dasharray: 1080;
     stroke-dashoffset: 1080;
-    animation: draw 10s ease forwards;
     transition: all 0.3s ease;
 }
 
@@ -53,7 +53,7 @@ body.black {
 }
 
 .title__text {
-    animation: titleText 5s ease forwards;
+    opacity: 0;
     font-family: "Marko One";
     font-size: 30px;
     transition: all 0.3s ease;
