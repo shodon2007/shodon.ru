@@ -1,3 +1,28 @@
+let width = 0;
+const bar = document.getElementById("barconfrm");
+let id;
+
+function move() {
+    id = setInterval(frame, 10);
+}
+
+function frame() {
+    if (width >= 100) {
+        setTimeout(() => {
+            document.querySelector('*').style.overflow = 'scroll';
+        }, 2000);
+        clearInterval(id);
+        tll.play();
+    }
+    else {
+        window.scrollTo(0, 0);
+        width++;
+        bar.style.width = width + "%";
+        document.getElementById("percent").innerHTML = width + "%";
+    }
+}
+
+// Animation
 const tll = gsap.timeline({
     paused: "true"
 });
@@ -23,25 +48,3 @@ tll.to('header', {
     opacity: 1,
 })
 tll.to('all', { overflow: 'scroll' })
-let width = 0;
-const bar = document.getElementById("barconfrm");
-let id;
-function move() {
-    id = setInterval(frame, 10);
-
-}
-function frame() {
-    if (width >= 100) {
-        setTimeout(() => {
-            document.querySelector('*').style.overflow = 'scroll';
-        }, 2000);
-        clearInterval(id);
-        tll.play();
-    }
-    else {
-        window.scrollTo(0, 0);
-        width++;
-        bar.style.width = width + "%";
-        document.getElementById("percent").innerHTML = width + "%";
-    }
-}
