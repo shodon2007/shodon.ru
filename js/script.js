@@ -8,7 +8,7 @@ const burgerClick = () => {
 
     if (isBurger == true) {
         burger.style.pointerEvents = "auto";
-        burger.style.zIndex = 3;
+        burger.style.zIndex = 6;
         burger.style.opacity = 1;
         burgerMenu.style.right = "0px";
     } else {
