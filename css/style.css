@@ -339,6 +339,7 @@ body.black .title__text {
 }
 
 .project__links a {
+  pointer-events: none;
   font-family: "Open Sans";
   font-size: 16px;
   text-decoration: none;
@@ -408,6 +409,9 @@ body.black .project__links a:hover::selection {
 
 .project__body:hover {
   opacity: 1;
+}
+.project__body:hover .project__links a {
+  transition: all 0.5s ease 1s;
 }
 
 body.black .portfolio {

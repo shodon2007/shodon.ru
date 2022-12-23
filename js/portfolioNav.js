@@ -53,7 +53,7 @@ function showElements(type) {
     resetElements();
     for (item of Object.values(type)) {
         document.querySelector(".portfolio__bottom").innerHTML += `
-    <div class="portfolio__project" style="background-image: url(img/${item.imgURL}.png)">
+    <div class="portfolio__project" onclick="showLink(this)" style="background-image: url(img/${item.imgURL}.png)">
         <div class="project__body">
             <div class="project__top">
                 <div class="project__title">${item.name}</div>
@@ -84,4 +84,13 @@ function resetNavStyles() {
 
 function resetElements() {
     document.querySelector('.portfolio__bottom').innerHTML = '';
+}
+
+function showLink(e) {
+    document.querySelectorAll('.project__links a').forEach((el) => {
+        el.style.pointerEvents = 'none';
+    })
+    setTimeout(() => {
+        e.querySelectorAll('.project__links a').forEach((el) => el.style.pointerEvents = 'visible');
+    }, 10);
 }
