@@ -15,8 +15,14 @@ function frame() {
         tll.play();
     }
     else {
+        if (document.readyState == 'loading' & width <= 30) {
+            width++;
+        } else if (document.readyState == 'interactive' & width <= 70) {
+            width++;
+        } else if (document.readyState == 'complete') {
+            width++;
+        }
         window.scrollTo(0, 0);
-        width++;
         bar.style.width = width + "%";
         document.getElementById("percent").innerHTML = width + "%";
     }
