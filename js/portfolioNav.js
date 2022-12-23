@@ -53,7 +53,7 @@ function showElements(type) {
     resetElements();
     for (item of Object.values(type)) {
         document.querySelector(".portfolio__bottom").innerHTML += `
-    <div class="portfolio__project" onclick="showLink(this)" style="background-image: url(img/${item.imgURL}.png)">
+    <div class="portfolio__project" onclick="window.innerWidth <= 900 ? showLink(this) : false" style="background-image: url(img/${item.imgURL}.png)">
         <div class="project__body">
             <div class="project__top">
                 <div class="project__title">${item.name}</div>

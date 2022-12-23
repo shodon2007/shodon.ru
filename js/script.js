@@ -25,5 +25,4 @@ const burgerClick = () => {
 const topic = () => {
     body.classList.toggle("black");
     body.classList.toggle("white");
-    console.log(body)
 }
