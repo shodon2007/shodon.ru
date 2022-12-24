@@ -2,7 +2,7 @@ const thisItem = 'featured';
 
 const landing = {};
 const featured = {};
-const frontend = {};
+const react = {};
 const fullstack = {};
 const javascript = {};
 
@@ -27,6 +27,7 @@ addNew(landing, "stamina", 'landing');
 addNew(javascript, "calculator", 'javascript');
 addNew(javascript, "movie", 'javascript');
 addNew(landing, "movie", 'landing');
+addNew(react, "counter", 'react app');
 
 function portfolioClick(type) {
     resetNavStyles();
@@ -35,8 +36,8 @@ function portfolioClick(type) {
 
     if (type == 'landing') {
         type = landing;
-    } else if (type == 'frontend') {
-        type = frontend
+    } else if (type == 'react') {
+        type = react;
     } else if (type == 'featured') {
         type = featured;
     } else if (type == 'fullstack') {
