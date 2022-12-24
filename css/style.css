@@ -409,9 +409,6 @@ body.black .project__links a:hover::selection {
 .project__body:hover {
   opacity: 1;
 }
-.project__body:hover .project__links a {
-  transition: all 0.5s ease 1s;
-}
 
 body.black .portfolio {
   transition: all 0.3s ease;
