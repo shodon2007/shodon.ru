@@ -20,7 +20,7 @@ function addNew(type, name, sort) {
 addNew(javascript, "notation", 'javascript');
 addNew(landing, "tennis", 'landing');
 addNew(landing, "portfolio", 'landing');
-addNew(landing, "clothes_store", 'landing');
+addNew(landing, "clothes-store", 'landing');
 addNew(javascript, "keyboard-stamina", 'javascript');
 addNew(landing, "regna", 'landing');
 addNew(landing, "stamina", 'landing');
