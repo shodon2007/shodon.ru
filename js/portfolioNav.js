@@ -27,7 +27,8 @@ addNew(landing, "stamina", 'landing');
 addNew(javascript, "calculator", 'javascript');
 addNew(javascript, "movie", 'javascript');
 addNew(react, "counter", 'react app');
-addNew(javascript, 'search', 'javascript')
+addNew(javascript, 'search', 'javascript');
+addNew(javascript, 'lights', 'javascript');
 
 function portfolioClick(type) {
     resetNavStyles();
