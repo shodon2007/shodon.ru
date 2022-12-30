@@ -34,18 +34,14 @@ function portfolioClick(type) {
     resetNavStyles();
     addNavStyle(type);
 
-
-    if (type == 'landing') {
-        type = landing;
-    } else if (type == 'react') {
-        type = react;
-    } else if (type == 'featured') {
-        type = featured;
-    } else if (type == 'fullstack') {
-        type = fullstack;
-    } else if (type == 'javascript') {
-        type = javascript;
+    switch (type) {
+        case 'landing': type = landing; break;
+        case 'react': type = react; break;
+        case 'featured': type = featured; break;
+        case 'fullstack': type = fullstack; break;
+        case 'javascript': type = javascript; break;
     }
+
     showElements(type);
 }
 
