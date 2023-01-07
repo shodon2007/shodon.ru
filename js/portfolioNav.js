@@ -28,6 +28,7 @@ addNew(javascript, "calculator", 'javascript');
 addNew(javascript, "movie", 'javascript');
 addNew(react, 'search', 'react app');
 addNew(javascript, 'player', 'javascript');
+addNew(javascript, 'tictactoe', 'javascript app');
 
 function portfolioClick(type) {
     resetNavStyles();
