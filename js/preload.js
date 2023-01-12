@@ -54,3 +54,5 @@ tll.to('header', {
     opacity: 1,
 })
 tll.to('all', { overflow: 'scroll' })
+
+move();
