@@ -30,6 +30,7 @@ addNew(react, 'search', 'react app');
 addNew(javascript, 'player', 'javascript');
 addNew(javascript, 'tictactoe', 'javascript app');
 addNew(landing, 'wine', 'landing');
+addNew(react, 'todo', 'react app');
 
 function portfolioClick(type) {
     resetNavStyles();
