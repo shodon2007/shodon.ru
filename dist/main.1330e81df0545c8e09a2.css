@@ -269,6 +269,7 @@ body.black .title__text {
 
 .portfolio__project {
   animation: showProjects 0.5s ease;
+  background-color: #e6e6e6;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
