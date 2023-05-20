@@ -7,7 +7,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
-        preloader: './preload.js',
         main: './index.js',
     },
     output: {

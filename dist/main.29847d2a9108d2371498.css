@@ -15,19 +15,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 100px; }
 
 .M_vciqOjQBuFLGAd7dZI {
   font-size: 40px;
-  font-family: 'Marko One'; }
+  font-family: 'Marko One';
+  opacity: 0;
+  transition: all 0.5s ease; }
+
+.kOgMqgZool6ZJeGewnos {
+  opacity: 1;
+  stroke-width: 5px;
+  stroke-dasharray: 1080;
+  stroke-dashoffset: 1080;
+  transition: all 0.5s ease; }
+
+._4xR7FAGQ6WNd7D0awwR .kOgMqgZool6ZJeGewnos {
+  opacity: 1;
+  animation: wV_5lN0QTM5Pc68gWkm8 5s ease forwards;
+  animation-duration: 0;
+  width: "0%"; }
+
+._4xR7FAGQ6WNd7D0awwR .M_vciqOjQBuFLGAd7dZI {
+  opacity: 1; }
+
+@keyframes wV_5lN0QTM5Pc68gWkm8 {
+  100% {
+    stroke-dashoffset: 0; } }
 
 /*!*****************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/test/Test.module.scss ***!
   \*****************************************************************************************************************************/
 .C0ORV3t_GFY_SFwAKGbG {
+  opacity: 0;
   width: 100vw;
-  height: 100vh;
-  background-color: white; }
+  height: 100vh; }
+
+.Z1nkGpYEQPB21UvOAxSp {
+  opacity: 1; }
 
 /*!*****************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/swiper/swiper.scss ***!
