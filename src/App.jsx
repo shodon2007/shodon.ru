@@ -7,7 +7,8 @@ import Test from './components/test/Test.jsx';
 
 import 'swiper/scss';
 import 'swiper/scss/effect-fade';
-import './styles.scss'
+import './styles.scss';
+import Projects from './components/projects/Projects.jsx';
 
 
 const App = () => {
@@ -26,13 +27,18 @@ const App = () => {
                     setThisSlide(swiper.activeIndex)
                 }}
             >
-                <SwiperSlide className='slide'><FirstScreen active={thisSlide == 0} /></SwiperSlide>
-                <SwiperSlide className='slide'><Test text={'slide 1'} active={thisSlide == 1} /></SwiperSlide>
-                <SwiperSlide className='slide'><Test text={'slide 2'} active={thisSlide == 2} /></SwiperSlide>
-                <SwiperSlide className='slide'><Test text={'slide 3'} active={thisSlide == 3} /></SwiperSlide>
-                <SwiperSlide className='slide'><Test text={'slide 4'} active={thisSlide == 4} /></SwiperSlide>
-                <SwiperSlide className='slide'><Test text={'slide 5'} active={thisSlide == 5} /></SwiperSlide>
-                <SwiperSlide className='slide'><Test text={'slide 6'} active={thisSlide == 6} /></SwiperSlide>
+                <SwiperSlide>
+                    <FirstScreen active={thisSlide == 0} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Projects />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Test text={'slide 2'} active={thisSlide == 2} />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <Test text={'slide 3'} active={thisSlide == 3} />
+                </SwiperSlide>
             </Swiper>
         </div>
     )

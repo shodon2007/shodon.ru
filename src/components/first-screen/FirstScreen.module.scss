@@ -1,11 +1,16 @@
 .main {
-    width: 100vw;
+    width: 1200px;
+    margin: 0 auto;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+}
+
+.main *::selection {
+    color: white;
+    background-color: black;
 }
 
 .title {

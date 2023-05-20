@@ -13,7 +13,12 @@ module.exports = {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
     },
-
+    resolve: {
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+        }
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
@@ -47,7 +52,11 @@ module.exports = {
                         presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
-            }
+            },
+            {
+                test: /\.png$/,
+                type: 'asset/resource',
+            },
         ]
     },
 }
