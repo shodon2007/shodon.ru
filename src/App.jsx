@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { Mousewheel } from 'swiper';
-import { EffectFade } from 'swiper';
+import SwiperCore, { EffectFade, Mousewheel } from 'swiper';
 
 import FirstScreen from './components/first-screen/FirstScreen.jsx';
 import Test from './components/test/Test.jsx';
