@@ -6,7 +6,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    entry: './index.js',
+    entry: {
+        preloader: './preload.js',
+        main: './index.js',
+    },
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist')
@@ -20,14 +23,14 @@ module.exports = {
             template: './index.html'
         }),
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, 'src/img'),
-                    to: path.resolve(__dirname, 'dist/img'),
-                }
-            ]
-        })
+        // new CopyWebpackPlugin({
+        //     patterns: [
+        //         {
+        //             from: path.resolve(__dirname, 'src/img'),
+        //             to: path.resolve(__dirname, 'dist/img'),
+        //         }
+        //     ]
+        // })
     ],
 
     module: {
@@ -37,12 +40,12 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
             },
             {
-                test: /\.m?js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
                     options: {
-                        presets: ['@babel/preset-env']
+                        presets: ['@babel/preset-env', '@babel/preset-react']
                     }
                 }
             }
