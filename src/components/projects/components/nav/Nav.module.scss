@@ -1,0 +1,26 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.button {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    border: 3px solid black;
+}
+
+.buttonActive {
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+}

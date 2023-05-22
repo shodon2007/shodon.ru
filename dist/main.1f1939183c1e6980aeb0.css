@@ -312,3 +312,45 @@ body {
   width: 100%;
   height: 100%; }
 
+/*!***********************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/projects/components/nav/Nav.module.scss ***!
+  \***********************************************************************************************************************************************/
+.FKauVg3NwUNMvM6OG4nS {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; }
+
+.GSYlIL0jNR26EizROZ0i {
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 20px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  transition: all 0.3s ease; }
+
+.GSYlIL0jNR26EizROZ0i:hover {
+  border: 3px solid black; }
+
+.zYSm92c6SNEX5VhrkkPm {
+  background-color: black;
+  color: white;
+  border: 3px solid black; }
+
+/*!*************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/projects/Projects.module.scss ***!
+  \*************************************************************************************************************************************/
+.ly_3_C4083wjUW1CPbTA {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px; }
+
+.THjcyo5DI35jLw2fvqAw {
+  font-size: 40px;
+  font-family: 'Marko One'; }
+

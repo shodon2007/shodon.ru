@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, { EffectFade, Mousewheel } from 'swiper';
-
+import { EffectFade, Mousewheel, Keyboard } from 'swiper';
 import FirstScreen from './components/first-screen/FirstScreen.jsx';
 import Test from './components/test/Test.jsx';
 
@@ -22,7 +21,8 @@ const App = () => {
                 effect={"fade"}
                 speed={500}
                 mousewheel={true}
-                modules={[EffectFade, Mousewheel]}
+                keyboard={{ enabled: true }}
+                modules={[EffectFade, Mousewheel, Keyboard]}
                 onSlideChange={(swiper) => {
                     setThisSlide(swiper.activeIndex)
                 }}
