@@ -24,17 +24,10 @@ module.exports = {
             filename: '[name].[contenthash].css',
         }),
         new HtmlWebpackPlugin({
-            template: './index.html'
+            template: './index.html',
+            favicon: path.resolve(__dirname, 'src/img/favicon.ico')
         }),
         new CleanWebpackPlugin(),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {
-        //             from: path.resolve(__dirname, 'src/img'),
-        //             to: path.resolve(__dirname, 'dist/img'),
-        //         }
-        //     ]
-        // })
     ],
 
     module: {
@@ -54,7 +47,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.png$/,
+                test: /\.(png|ico)$/,
                 type: 'asset/resource',
             },
         ]
