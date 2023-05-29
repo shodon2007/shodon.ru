@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { EffectFade, Mousewheel, Keyboard } from 'swiper';
 import FirstScreen from './components/first-screen/FirstScreen.jsx';
-import Test from './components/test/Test.jsx';
 
 import 'swiper/scss';
 import 'swiper/scss/effect-fade';
@@ -32,12 +31,6 @@ const App = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <Projects />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Test text={'slide 2'} active={thisSlide == 2} />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <Test text={'slide 3'} active={thisSlide == 3} />
                 </SwiperSlide>
             </Swiper>
         </div>

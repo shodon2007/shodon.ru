@@ -24,3 +24,18 @@
 .itemBody:hover {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .item {
+        height: 200px;
+    }
+    .main {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

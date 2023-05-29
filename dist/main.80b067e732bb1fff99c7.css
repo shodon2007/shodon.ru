@@ -25,6 +25,7 @@
 .M_vciqOjQBuFLGAd7dZI {
   font-size: 40px;
   font-family: 'Marko One';
+  text-align: center;
   opacity: 0;
   transition: all 1s ease; }
 
@@ -52,17 +53,18 @@
   100% {
     stroke-dashoffset: 1080; } }
 
-/*!*****************************************************************************************************************************!*\
-  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/test/Test.module.scss ***!
-  \*****************************************************************************************************************************/
-.C0ORV3t_GFY_SFwAKGbG {
-  opacity: 0;
-  width: 100vw;
-  height: 100vh;
-  transition: all .5s ease; }
+@media (max-width: 1200px) {
+  .chYoV9_dHDSXcU9wHmFm {
+    width: 100%;
+    padding: 10px; } }
 
-.Z1nkGpYEQPB21UvOAxSp {
-  opacity: 1; }
+@media (max-width: 768px) {
+  .M_vciqOjQBuFLGAd7dZI {
+    font-size: 28px; } }
+
+@media (max-width: 425px) {
+  .M_vciqOjQBuFLGAd7dZI {
+    font-size: 25px; } }
 
 /*!*****************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/swiper/swiper.scss ***!
@@ -364,6 +366,16 @@ body {
 .MjbPHL7N63jDQQKnTBM8:hover {
   opacity: 1; }
 
+@media (max-width: 768px) {
+  .z48zlyE28VSV2vUCsI_Q {
+    height: 200px; }
+  .toGjer7lLwadpDbCgC1S {
+    gap: 10px; } }
+
+@media (max-width: 425px) {
+  .toGjer7lLwadpDbCgC1S {
+    grid-template-columns: repeat(2, 1fr); } }
+
 /*!*************************************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/projects/Projects.module.scss ***!
   \*************************************************************************************************************************************/
@@ -373,10 +385,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
-  gap: 20px; }
+  padding: 30px 0;
+  gap: 20px;
+  overflow: auto; }
 
 .THjcyo5DI35jLw2fvqAw {
   font-size: 40px;
   font-family: 'Marko One'; }
+
+@media (max-width: 1200px) {
+  .ly_3_C4083wjUW1CPbTA {
+    width: 100%;
+    padding: 10px; } }
+
+@media (max-width: 768px) {
+  .THjcyo5DI35jLw2fvqAw {
+    font-size: 28px; }
+  .ly_3_C4083wjUW1CPbTA {
+    gap: 10px; } }
 
