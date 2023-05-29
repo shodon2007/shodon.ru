@@ -1,0 +1,26 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.item {
+    border-radius: 30px;
+    height: 300px;
+    position: relative;
+}
+
+.itemBody {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemBody:hover {
+    opacity: 1;
+}

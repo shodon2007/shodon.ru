@@ -101,7 +101,7 @@ const appList = [
     },
     {
         name: 'wine',
-        category: 'react',
+        category: 'landing',
         github: 'https://github.com/shodon2007/wine',
         web: 'https://wine.shodon.ru',
         img: wine,

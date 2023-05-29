@@ -25,15 +25,7 @@
     height: 300px;
 }
 
-@keyframes showProjects {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
 
 .project__body {
     opacity: 0;
@@ -226,6 +218,15 @@ body.white {
     }
 }
 
+@keyframes showProjects {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 @media (max-width: 1200px) {
     .portfolio__bottom {
