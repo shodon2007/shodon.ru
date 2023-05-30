@@ -8,7 +8,11 @@ const List = ({ category, appList }) => {
             {appList.filter(el => el.category == category).map(el => {
                 return <div key={el.name} className={styles.item} style={{ backgroundImage: `url(${el.img})  ` }}>
                     <div className={styles.itemBody}>
-                        {el.name}
+                        <div className={styles.name}>{el.name}</div>
+                        <div className={styles.links}>
+                            <a href={el.link} className={styles.link}>online</a>
+                            <a href={el.github} className={styles.link}>github</a>
+                        </div>
                     </div>
                 </div>
             })}
