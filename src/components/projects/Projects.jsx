@@ -7,7 +7,7 @@ import List from './components/list/List';
 import styles from './Projects.module.scss';
 
 
-const Projects = () => {
+const Projects = ({ active }) => {
     let [category, setCategory] = useState('landing');
     return (
         <div className={styles.main}>

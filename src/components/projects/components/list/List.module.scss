@@ -9,6 +9,7 @@
 .item {
     border-radius: 30px;
     position: relative;
+    background: rgb(230, 230, 230) center center / cover no-repeat;
 }
 
 .itemBody {
@@ -16,6 +17,7 @@
     height: 100%;
     transition: all 0.5s ease;
     opacity: 0;
+    background: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
