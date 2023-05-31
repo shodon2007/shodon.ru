@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import FirstScreen from './components/first-screen/FirstScreen.jsx';
 import Projects from './components/projects/Projects.jsx';
-import MainSwiper from './components/mainSwiper/mainSwiper.jsx';
+import MainSwiper from './components/mainSwiper/MainSwiper.jsx';
 
 import 'swiper/scss';
 import 'swiper/scss/effect-fade';
