@@ -8,6 +8,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     entry: {
         main: './index.js',
+        mobileSize: './MobileSize.js',
     },
     output: {
         filename: '[name].[contenthash].js',

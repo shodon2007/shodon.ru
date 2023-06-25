@@ -1,8 +1,10 @@
 import React from 'react'
 
 import styles from './FirstScreen.module.scss';
+import { useSelector } from 'react-redux';
 
 const FirstScreen = ({ active }) => {
+    let lang = useSelector(state => state.lang);
     return (
         <div className={styles.main + ' ' + (active ? styles.active : null)}>
             <svg viewBox="0 0 1056.1 380" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +15,7 @@ const FirstScreen = ({ active }) => {
                 <path className={styles.svgText} fill="none" stroke="black" strokeWidth="5px"
                     d="m624 115 41-13c13-2 12 10 13 15a2892 2892 0 0 1 2 178c8 14 24 31-3 44-12 6-48 14-48 8-3-46-22 17-57 0-42-21-49-67-45-97 14-94 70-84 82-76 6 4 13 11 14-3 0-11-6-23-7-23-11-2-23-20 8-33Zm-2 111c-12-43-29-9-32 8l-2 35c15 73 33 21 34 18 0-5 2-57 0-61ZM863 197c6-8 67-45 67-21-1 20 8 35 19 7 6-15 27-17 42-12 4 1 26 8 30 46 2 23-2 80 3 92 3 7 27 24-4 37-13 6-40 3-49 1-22-5-16-21-10-30 7-12 5-79 1-86-15-24-29-3-29 3-1 23-3 70 0 77 2 6 25 32-18 37-6 1-29 2-39-2-28-9-13-29-4-36 3-3 5-77 2-81-11-15-18-20-11-32Z" />
             </svg>
-            <h1 className={styles.title}>Frontend React Developer</h1>
+            <h1 className={styles.title}>{lang === 'en' ? 'Frontend React Developer' : 'Фронтенд Реакт Разработчик'}</h1>
         </div>
     )
 }
