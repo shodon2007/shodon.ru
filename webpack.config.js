@@ -17,6 +17,7 @@ module.exports = {
         extensions: ['.js', '.jsx'],
         alias: {
             '@': path.resolve(__dirname, 'src'),
+            'Images': path.resolve(__dirname, 'src/img'),
         }
     },
     plugins: [

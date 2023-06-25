@@ -7,11 +7,13 @@ import MainSwiper from './components/mainSwiper/MainSwiper.jsx';
 import 'swiper/scss';
 import 'swiper/scss/effect-fade';
 import './styles.scss';
+import Header from './components/header/Header.jsx';
 
 const App = () => {
     let [thisSlide, setThisSlide] = useState(0);
     return (
         <div className="app">
+            <Header />
             <MainSwiper setSlide={setThisSlide} >
                 <FirstScreen active={thisSlide == 0} />
                 <Projects active={thisSlide == 1} />
