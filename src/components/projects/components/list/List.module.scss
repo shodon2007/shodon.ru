@@ -7,6 +7,7 @@
 }
 
 .item {
+    text-align: center;
     border-radius: 30px;
     position: relative;
     background: rgb(230, 230, 230) center center / cover no-repeat;
@@ -43,7 +44,7 @@
     padding: 5px 30px;
     border-radius: 30px;
     color: black;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
 .link:hover {
@@ -59,10 +60,27 @@
     .main {
         gap: 10px;
     }
+    .item {
+        border-radius: 15px;
+    }
+    .name {
+        font-size: 23px;
+    }
+    .link {
+        padding: 3px 15px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 425px) {
     .main {
         grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .name {
+        font-size: 16px;
+    }
+    .itemBody {
+        padding: 5px 0;
     }
 }
