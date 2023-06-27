@@ -11,7 +11,7 @@ const List = ({ category, appList }) => {
                         <div className={styles.name}>{el.name}</div>
                         <div className={styles.links}>
                             <a href={el.link} className={styles.link}>online</a>
-                            <a href={el.github} className={styles.link}>github</a>
+                            <a href={el.github} className={styles.link} id='github'>github</a>
                         </div>
                     </div>
                 </div>

@@ -24,7 +24,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+
+    & * a {
+        transition: all 0.5s ease;
+        transition: pointer-events 0s ease 0.5s;
+        pointer-events: none;
+    }
 }
+
+.itemBody:hover {
+    opacity: 1;
+    & * a {
+        pointer-events: auto;
+    }
+}
+
+
 
 .name {
     font-size: 30px;
@@ -38,7 +53,6 @@
 }
 
 .link {
-    transition: all 0.5s ease;
     font-size: 16px;
     text-decoration: none;
     padding: 5px 30px;
@@ -52,9 +66,7 @@
     background-color: black;
 }
 
-.itemBody:hover {
-    opacity: 1;
-}
+
 
 @media (max-width: 768px) {
     .main {
@@ -67,8 +79,11 @@
         font-size: 23px;
     }
     .link {
-        padding: 3px 15px;
+        padding: 1px 15px;
         font-size: 14px;
+    }
+    .links {
+        gap: 6px;
     }
 }
 
@@ -82,5 +97,11 @@
     }
     .itemBody {
         padding: 5px 0;
+    }
+    .links {
+        gap: 3px;
+    }
+    .link:nth-child(2) {
+        display: none;
     }
 }
