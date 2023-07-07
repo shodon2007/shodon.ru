@@ -24,19 +24,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-
-    & * a {
-        transition: all 0.5s ease;
-        transition: pointer-events 0s ease 0.5s;
-        pointer-events: none;
-    }
 }
 
 .itemBody:hover {
     opacity: 1;
-    & * a {
-        pointer-events: auto;
-    }
 }
 
 
@@ -53,6 +44,7 @@
 }
 
 .link {
+    transition: all 500ms ease;
     font-size: 16px;
     text-decoration: none;
     padding: 5px 30px;

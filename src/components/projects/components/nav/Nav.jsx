@@ -5,26 +5,31 @@ import { useSelector } from 'react-redux';
 
 const Nav = ({ category, setCategory }) => {
     let lang = useSelector(state => state.lang);
+    function activeButton(btn) {
+        if (btn === category) {
+            return styles.buttonActive;
+        }
+
+        return '';
+    }
+    const buttonList = [
+        { ru: 'верстки', en: 'landing' },
+        { ru: 'реакт', en: 'react' },
+        { ru: 'javascript', en: 'javascript' },
+    ]
+
     return (
         <div className={styles.main}>
-            <input
-                type='button'
-                value={lang === 'ru' ? 'верстки' : 'landing'}
-                onClick={() => setCategory('landing')}
-                className={(category == 'landing' ? styles.buttonActive : null) + ' ' + (styles.button)}
-            />
-            <input
-                type='button'
-                value={lang === 'ru' ? 'реакт' : 'react'}
-                onClick={() => setCategory('react')}
-                className={(category == 'react' ? styles.buttonActive : null) + ' ' + (styles.button)}
-            />
-            <input
-                type='button'
-                value={'javascript'}
-                onClick={() => setCategory('javascript')}
-                className={(category == 'javascript' ? styles.buttonActive : null) + ' ' + (styles.button)}
-            />
+            {
+                buttonList.map(button =>
+                    <input
+                        type='button'
+                        value={lang === 'ru' ? button.ru : button.en}
+                        onClick={() => setCategory(button.en)}
+                        className={`${activeButton(button.en)} ${styles.button}`}
+                    />
+                )
+            }
         </div>
     )
 }

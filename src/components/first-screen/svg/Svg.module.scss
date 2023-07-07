@@ -1,0 +1,28 @@
+.svgText {
+    opacity: 0;
+    stroke-width: 5px;
+    stroke-dasharray: 1080;
+    transition: all 1s ease;
+    animation: noDraw 1s ease forwards;
+}
+
+.active {
+    .svgText {
+        opacity: 1;
+        stroke-dashoffset: 1080;
+        animation: draw 1s ease forwards;
+        animation-duration: 1;
+    }
+}
+
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes noDraw {
+    100% {
+        stroke-dashoffset: 1080;
+    }
+}
