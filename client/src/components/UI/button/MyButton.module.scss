@@ -1,0 +1,16 @@
+.button {
+    border: 1px solid white;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 15px;
+}
+
+.button.active {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    border-color:black;
+}

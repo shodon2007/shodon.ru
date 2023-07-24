@@ -1,0 +1,27 @@
+.main {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100%;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    gap: 5px;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        width: 100%;
+    }
+}

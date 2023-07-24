@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+    font-weight: 400;
+    user-select: none;
+    -ms-overflow-style: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.app {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+
+@media (hover: none) {
+    *:active {
+        background-color: transparent;
+    }
+}
